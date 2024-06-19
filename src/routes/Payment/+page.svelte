@@ -1,5 +1,5 @@
 <script>
-
+    import { base } from '$app/paths';
 </script>
 
 <main>
@@ -8,7 +8,7 @@
     <div class="card">
         <div class="leftSide">
             <img
-                src="/assets/ink.png"
+                src="${base}/assets/ink.png"
                 class="product"
                 alt="Shoes"
             />
@@ -49,12 +49,11 @@
                     <input type="number" class="inputBox" name="amount" id="amount" required />
                 </div>
                 <p></p>
-                <form action="/Paymentgood" method="get">
+                <form action="${base}/Paymentgood" method="get">
                     <button type="submit" class="button">
-                     CheckOut
+                        CheckOut
                     </button>
-                  </form>
-                  
+                </form>
             </form>
         </div>
     </div>
