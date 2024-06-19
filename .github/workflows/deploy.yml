@@ -9,12 +9,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4  # Updated to v4
+        uses: actions/checkout@v4  
 
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '21'  # Use Node.js 21 as specified
+          node-version: '20'  
           cache: npm
 
       - name: Install dependencies
@@ -23,13 +23,13 @@ jobs:
       - name: build
         env:
           BASE_PATH: "/${{ github.event.repository.name }}"
-          PUBLIC_HYGRAPH_URL: ${{ secrets.PUBLIC_HYGRAPH_URL }}  # Ensure these are secrets
+          PUBLIC_HYGRAPH_URL: ${{ secrets.PUBLIC_HYGRAPH_URL }} 
           PUBLIC_HYGRAPH_KEY: ${{ secrets.PUBLIC_HYGRAPH_KEY }}
         run: |
           npm run build
 
       - name: Upload Artifacts
-        uses: actions/upload-pages-artifact@v3  # Updated to v3
+        uses: actions/upload-pages-artifact@v3  
 
   deploy:
     needs: build_site
@@ -43,4 +43,4 @@ jobs:
     steps:
       - name: Deploy
         id: deployment
-        uses: actions/deploy-pages@v3  # Updated to v3
+        uses: actions/deploy-pages@v3  
