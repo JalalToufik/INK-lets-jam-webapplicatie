@@ -3,7 +3,6 @@
 <script>
   import { base } from '$app/paths';
   import { currentPosition } from '$lib/cardCarrousel.js';
-  import { CarrouselButton } from '$lib/index.js';
 
   // carrouselcontent 
   export const cards = [

@@ -2,7 +2,6 @@
 	import {
 		MainHero,
 		MainAbout,
-		PlayerCarrousel,
 		MainStats,
 		MainSponsor,
 		MainStory,
@@ -15,7 +14,6 @@
 
 <MainHero />
 <MainAbout {data} />
-<PlayerCarrousel />
 <MainStats {data} />
 <MainSponsor {data} />
 <MainStory {data} />

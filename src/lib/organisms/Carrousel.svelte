@@ -1,12 +1,11 @@
 
 <script>
-	import {CardCarrousel, ImageCarrousel} from '$lib/index.js'
+	import {CardCarrousel} from '$lib/index.js'
 </script>
 
 <section class="carrousel">
   <h2>Stay up to date</h2>
     <CardCarrousel />
-    <ImageCarrousel />
 </section>
 
 <style>
