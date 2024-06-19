@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
     import { base } from '$app/paths';
 </script>
 
@@ -200,4 +200,4 @@ p {
     border-bottom-color: green; /* Change border color on valid input */
 }
 
-</style>
+</style> -->
