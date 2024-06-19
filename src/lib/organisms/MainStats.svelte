@@ -1,5 +1,4 @@
 <script>
-    // @ts-nocheck
     import { Stats } from '$lib/index.js'
     export let data
 </script>

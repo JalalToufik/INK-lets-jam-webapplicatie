@@ -1,7 +1,6 @@
 <script>
 	import { BtnArrowBlue } from '$lib/index.js';
     import { base } from '$app/paths';
-	// export let data;
 </script>
 
 <section class="heroPromise">

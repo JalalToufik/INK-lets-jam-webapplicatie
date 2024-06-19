@@ -1,7 +1,7 @@
 <script>
 	import { BtnArrow } from '$lib/index.js';
     import { base } from '$app/paths';
-	// export let data;
+
 </script>
 
 <section class="heroAbout">

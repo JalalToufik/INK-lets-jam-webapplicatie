@@ -1,17 +1,13 @@
 
 <script>
-
 	import {CardCarrousel, ImageCarrousel} from '$lib/index.js'
-	
 </script>
-
 
 <section class="carrousel">
   <h2>Stay up to date</h2>
     <CardCarrousel />
     <ImageCarrousel />
 </section>
-
 
 <style>
 h2 {
@@ -25,8 +21,6 @@ h2 {
   text-align: center;
   font-size: clamp(24px, 3.8vw, 50px);
 }
-
-
 .carrousel {
   width: 100%;
   height: 93vw;
@@ -39,9 +33,7 @@ h2 {
   background-size: contain;
   background-position: center;
   padding: 0;
-  /* overflow-x: hidden; */
 }
-
 
 /* Media query voor mobiele apparaten */
 @media only screen and (max-width: 600px) {

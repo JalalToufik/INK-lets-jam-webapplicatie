@@ -1,6 +1,5 @@
 <script>
 	import { base } from '$app/paths';
-	// export let data;
 </script>
 
 <section id="introAbout">

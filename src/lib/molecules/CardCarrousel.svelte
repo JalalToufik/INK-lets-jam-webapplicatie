@@ -23,27 +23,17 @@
               <img src={`${base}/assets/${card.image}`}  loading="lazy" alt="children playing">
           </div>
           <h3>{card.title}</h3>
-          <!-- <p>Read more</p> -->
       </article>
   {/each}
 </section>
 
-<!-- <CarrouselButton /> -->
-
-
-
 
 <style>
-
-
-
 h3 {
   font-family: "Kirang Haerang";
   color: black;
   font-size: 1.5em;
 }
-
-
 .carrouselSection {
   display: flex;
   flex-direction: row;
@@ -52,8 +42,6 @@ h3 {
   width: 100%;
   margin: 4% 0 2% 0;
 }
-
-
 .carrouselItem {
   background-image: url(/assets/item-bg-shape.svg);
   background-repeat: no-repeat;
@@ -71,23 +59,18 @@ h3 {
   margin-right: 16px;
   box-sizing: border-box;
 }
-
-
 .carrouselItem > h3 {
   font-size: clamp(16px, 1.5vw, 24px);
   font-weight: 400;
   font-family: var(--paragraph-font);
   padding: clamp(0.5rem, 1vw, 1vw);
 }
-
-
 .carrouselItemImage {
   max-width: 100%;
   height: 60%;
   overflow: hidden;
   border-radius: 5px;
 }
-
 .carrouselItem .carrouselItemImage > img {
   border-radius: 5px;
   max-width: 100%;
@@ -103,19 +86,16 @@ h3 {
     height: auto; 
     margin-right: 0; 
   }
-
   .carrouselItemImage {
     width: 100%;
     height: 60%;
   }
-
   h3 {
     font-size: 1.5em;
     overflow: hidden;
     padding:auto;
   }
 }
-
 @media only screen and (min-width: 451px) and (max-width: 767px) {
   .carrouselItem {
     width: calc(50% - 1rem);

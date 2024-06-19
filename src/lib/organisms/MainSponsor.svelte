@@ -1,5 +1,4 @@
 <script>
-	// @ts-nocheck
 	import { BtnPrimary } from '$lib/index.js';
 	import { base } from '$app/paths';
 	export let data;
