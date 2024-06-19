@@ -14,7 +14,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'  
+          node-version: '21.2.0'  
           cache: npm
 
       - name: Install dependencies
@@ -23,8 +23,8 @@ jobs:
       - name: build
         env:
           BASE_PATH: "/${{ github.event.repository.name }}"
-          PUBLIC_HYGRAPH_URL: ${{ secrets.PUBLIC_HYGRAPH_URL }} 
-          PUBLIC_HYGRAPH_KEY: ${{ secrets.PUBLIC_HYGRAPH_KEY }}
+          PUBLIC_HYGRAPH_URL: ${{ vars.PUBLIC_HYGRAPH_URL }} 
+          PUBLIC_HYGRAPH_KEY: ${{ vars.PUBLIC_HYGRAPH_KEY }}
         run: |
           npm run build
 
