@@ -1,0 +1,51 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: main  # No quotes needed around the branch name
+
+jobs:
+  build_site:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4  # Use the latest v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3  # v3 is still recommended
+        with:
+          node-version: '18'  # Quote the version for consistency
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: build
+        env:
+          BASE_PATH: "/${{ github.event.repository.name }}"
+          PUBLIC_HYGRAPH_URL: ${{ secrets.PUBLIC_HYGRAPH_URL }}  # Use secrets, not vars
+          PUBLIC_HYGRAPH_KEY: ${{ secrets.PUBLIC_HYGRAPH_KEY }}  # Use secrets, not vars
+        run: |
+          npm run build
+
+      - name: Upload Artifacts
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: build/  # No quotes needed here
+
+  deploy:
+    needs: build_site
+    runs-on: ubuntu-latest
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v2
