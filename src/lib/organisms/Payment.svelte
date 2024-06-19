@@ -1,10 +1,9 @@
 <script>
-    import { base } from '$app/paths';
+    import {base} from '$app/paths';
 </script>
 
 <main>
     <div class="mainscreen">
-        <!-- <img src="https://image.freepik.com/free-vector/purple-background-with-neon-frame_52683-34124.jpg" class="bgimg" alt=""> -->
         <div class="card">
             <div class="leftside">
                 <img
@@ -14,7 +13,7 @@
                 />
             </div>
             <div class="rightside">
-                <form action="">
+                <form action="{base}">
                     <h1>CheckOut</h1>
                     <h2>Payment Information</h2>
                     <p>Cardholder Name</p>

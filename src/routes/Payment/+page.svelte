@@ -4,7 +4,6 @@
 
 <main>
 <div class="mainScreen">
-    <!-- <img src="https://image.freepik.com/free-vector/purple-background-with-neon-frame_52683-34124.jpg" class="bgimg" alt=""> -->
     <div class="card">
         <div class="leftSide">
             <img
@@ -14,7 +13,7 @@
             />
         </div>
         <div class="rightSide">
-            <form action="">
+            <form action="{base}">
                 <h1>CheckOut</h1>
                 <h2>Payment Information</h2>
                 <p>Cardholder Name</p>
