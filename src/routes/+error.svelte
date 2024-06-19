@@ -1,3 +1,2 @@
-<h1>It didn’t work.. boohoo</h1>
+<h1>It didn’t work.. We are sorry</h1>
 
-<!--later 404 stylen met html -->
