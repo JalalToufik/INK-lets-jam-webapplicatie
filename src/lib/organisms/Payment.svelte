@@ -8,7 +8,7 @@
         <div class="card">
             <div class="leftside">
                 <img
-                    src="${base}/ink.png"
+                    src="{base}/ink.png"
                     class="product"
                     alt="Shoes"
                 />
@@ -49,7 +49,7 @@
                         <input type="number" class="inputbox" name="amount" id="amount" required />
                     </div>
                     <p></p>
-                    <form action="${base}/paymentgood" method="get">
+                    <form action="{base}/paymentgood" method="get">
                         <button type="submit" class="button">
                             CheckOut
                         </button>

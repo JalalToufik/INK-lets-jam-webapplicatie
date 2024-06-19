@@ -8,7 +8,7 @@
     <div class="card">
         <div class="leftSide">
             <img
-                src="${base}/assets/ink.png"
+                src="{base}/assets/ink.png"
                 class="product"
                 alt="Shoes"
             />
