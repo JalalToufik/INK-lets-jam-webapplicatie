@@ -15,7 +15,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 21
+          node-version: 18
           cache: npm
 
       - name: Install dependencies
@@ -29,12 +29,12 @@ jobs:
         run: |
           npm run build
 
-      - uses: actions/upload-artifact@v2
+      - name: Upload Artifacts
+        uses: actions/upload-pages-artifact@v2
         with:
-          name: my-artifact
           path: 'build/'
 
-  deploy:
+deploy:
     needs: build_site
     runs-on: ubuntu-latest
 
