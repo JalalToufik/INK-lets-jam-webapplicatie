@@ -1,10 +1,14 @@
+<script>
+    import { base } from '$app/paths';
+</script>
+
 <main>
     <div class="mainscreen">
         <!-- <img src="https://image.freepik.com/free-vector/purple-background-with-neon-frame_52683-34124.jpg" class="bgimg" alt=""> -->
         <div class="card">
             <div class="leftside">
                 <img
-                    src="/ink.png"
+                    src="${base}/ink.png"
                     class="product"
                     alt="Shoes"
                 />
@@ -45,12 +49,11 @@
                         <input type="number" class="inputbox" name="amount" id="amount" required />
                     </div>
                     <p></p>
-                    <form action="/paymentgood" method="get">
+                    <form action="${base}/paymentgood" method="get">
                         <button type="submit" class="button">
-                         CheckOut
+                            CheckOut
                         </button>
-                      </form>
-                      
+                    </form>
                 </form>
             </div>
         </div>
